@@ -5,10 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>boolean-uk-html-stylish-form</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>
-      This is a static template, there is no bundler or bundling involved!
-    </h1>
+      <form action="thankyou.html" >
+    <h1>Say Hello!</h1>
+        <label>
+          <p>Your name</p> 
+          <input class="name" type="text" name="name" placeholder="Enter your name" required/>
+        </label>
+        <label>
+          <p>Email</p>
+          <input  class="email" type="email" placeholder="abc@example.com" required/>
+        </label>
+        <label>
+          <p>Needed Services</p>
+          <select name="services">
+              <option value="">Choose Services</option>
+            <option value="web">Website Development</option>
+            <option value="app">App Development</option>
+            <option value="digital">Digital Marketing</option>
+            <option value="seo">SEO/SEM</option>
+          </select>
+        </label>
+        <label>
+          <p>Budget</p>
+          <select name="budget">
+            <option value="">Select Budget</option>
+            <option value="<1k">Below &#163; 1k</option>
+            <option value="1k-3k">&#163; 1k-3k</option>
+            <option value="3k-5k">&#163; 3k-5k</option>
+            <option value="5k-10k">&#163; 5k-10k</option>
+            <option value="10k>">&#163; 10k or above</option>
+          </select>
+        </label>
+        <label>
+          <p>Message</p>
+          <textarea rows="5" cols="33">Your message here...</textarea>
+        </label>
+        <button type="submit">Submit      &#8594;</button>
+   
   </body>
 </html>
