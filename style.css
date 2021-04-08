@@ -34,7 +34,8 @@ label {
   display: block;
 }
 
-form h1 {
+form h1,
+form h2 {
   text-align: center;
 }
 
@@ -75,14 +76,43 @@ select {
   background-size: 20px;
 }
 
+a,
 button {
   width: 100%;
   height: 50px;
+  display: block;
+
   border-top-left-radius: 30px;
   border-bottom-left-radius: 30px;
   border-top-right-radius: 30px;
   border-bottom-right-radius: 30px;
-  align-items: center;
+  border: none;
+
+  text-align: center;
+  margin-top: 20px;
+
+  color: white;
+  font-weight: bold;
+  background: rgb(19, 144, 233);
+  background: linear-gradient(
+    90deg,
+    rgba(19, 144, 233, 1) 0%,
+    rgba(122, 57, 150, 1) 100%
+  );
+}
+
+form a {
+  width: 100%;
+  line-height: 50px;
+  height: 50px;
+  text-align: center;
+
+  text-decoration: none;
+
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
   border: none;
   margin-top: 20px;
 
@@ -112,6 +142,7 @@ form textarea:focus {
   transform: scale(1.05);
 }
 
+a:hover,
 button:hover {
   animation: button-hover 0.4s linear alternate;
   animation-fill-mode: forwards;
@@ -168,19 +199,27 @@ button:hover {
     );
   }
 
-  80%{
-    background: rgb(19,144,233);
-background: linear-gradient(
-  90deg, rgba(19,144,233,1) 0%,
-   rgba(122,57,150,1) 50%,
-    rgba(161,208,241,1) 100%);
-    }
+  80% {
+    background: rgb(19, 144, 233);
+    background: linear-gradient(
+      90deg,
+      rgba(19, 144, 233, 1) 0%,
+      rgba(122, 57, 150, 1) 50%,
+      rgba(161, 208, 241, 1) 100%
+    );
+  }
 
-100%{
-  background: rgb(19, 144, 233);
-  background: linear-gradient(
-    90deg,
-    rgba(19, 144, 233, 1) 0%,
-    rgba(122, 57, 150, 1) 100%);
+  100% {
+    background: rgb(19, 144, 233);
+    background: linear-gradient(
+      90deg,
+      rgba(19, 144, 233, 1) 0%,
+      rgba(122, 57, 150, 1) 100%
+    );
+  }
+}
 
+form svg {
+  display: block;
+  margin: auto;
 }
